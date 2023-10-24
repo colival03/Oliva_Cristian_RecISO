@@ -22,3 +22,6 @@ while final != 0:
 
     print( "¿Quiere finalizar el proceso? Teclee 0 para salir.")
     final= int(input())
+
+'''Realiza un programa en el que pida al usuario tres números distintos y de los tres que muestre el mayor de los tres y
+   y para finalizar el programa presione la tecla 0.'''
