@@ -1,4 +1,4 @@
-def un_proceso():
+def tabla_multiplicar():
     i = 1
     j = 1
     while i != 0:
@@ -10,7 +10,4 @@ def un_proceso():
                 print(f"{i} x {j} = {r}")
                 j += 1
 
-un_proceso()
-
-'''Realiza un proceso en el que te muestre la tabla de multiplicar 
-   y para finalizar pulsar la tecla 0.'''
+tabla_multiplicar()
