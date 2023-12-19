@@ -1,0 +1,26 @@
+# He utilizado "mkdir -p" para que podamos crear un directorio dentro de otro, "&&" para unir los comandos en un solo paso aunque se ejecutan de manera independiente, touch para crear los archivos y para el rango "{1..9}" en el directorio recién creado.
+
+mkdir -p Documentos/ejercicio_permisos && touch Documentos/ejercicio_permisos/archiv{1..9}
+
+# Para cambiar los permisos he utilizado el comando chmod por defecto se crean con los permisos 664 (-rw-rw-r--).
+
+chmod 700 archiv1
+chmod 600 archiv2
+chmod 777 archiv3
+chmod 764 archiv4
+chmod 740 archiv5
+chmod u=rx,g=rw,o=r archiv6
+chmod u=r,g=,o=x archiv7
+chmod g-w archiv8
+
+# Con chmod +/-
+
+chmod o+r archiv1
+chmod u-w archiv2
+chmod u-x,g-x,o-x archiv3
+chmod g-r,o-r archiv4
+chmod g-r,o+wx archiv5
+chmod u+w,o-r archiv6
+chmod u+w,g=x,o=w archiv7
+chmod u-rw,g-rw archiv8
+chmod u+x,g-rw,o-r archiv9

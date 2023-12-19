@@ -1,0 +1,8 @@
+# "-m -d" para indicarle la ruta en donde la quieres crear "-c" para indicarle el nombre real del usuario, "-e" para añadirle la fecha en la caduca la cuenta en formato "YYYY-MM-DD" y por último el nombre del usuario que se quiere crear.
+
+sudo useradd -m -d /home/cristianrecuiso/ -c "Cristian" -e 2023-12-25 CristianIso
+
+# Borrar un usuario.
+# El "-r" para eliminar el directorio personal del usuario y su contenido.
+
+sudo userdel -r CristianIso

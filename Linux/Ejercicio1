@@ -1,0 +1,3 @@
+# Nombre de usuario, id usuario, id de grupo, ruta del directorio personal.
+
+whoami && id -u && id -g && $HOME
